@@ -1,3 +1,10 @@
+html{
+    font-size: 16px;
+    /* font-family: 'Economica', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -8,6 +15,7 @@ body{
 }
 
 .content{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,13 +73,49 @@ tr td:last-child{
     border-left: 6px solid gray;
 }
 
-.d-none{
-    display: none;
-}
-
 #crossOut{
     position: absolute;
     background-color: black;    
 }
 
+.player1, .player2{
+    position: absolute;
+    bottom: 16%;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 10px;
+    opacity: 0.3;
+    
+}
 
+.player1 img, .player2 img{
+    height: 35px;
+}
+
+.player1 img{
+    margin-right: 10px;
+}
+
+.player2 img{
+    margin-left: 10px;
+}
+
+.player1{
+    left: 20%;
+}
+
+.player2{
+    right: 20%;
+}
+
+.d-none{
+    display: none;
+}
+
+.activePlayer{
+    background-color: rgba(142, 230, 27, 0.466);
+    border-radius: 10px;
+    color: red;
+    font-weight: bold;
+    opacity: 1;
+}
