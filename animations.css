@@ -142,8 +142,8 @@
 
     100% {
         top: 48%;
-        left: 0px;
-        right: 0px;
+        left: -50px;
+        right: -50px;
         height: 10px;
         transform: rotate(45deg);
     }
@@ -164,8 +164,8 @@
 
     100% {
         top: 48%;
-        left: 0px;
-        right: 0px;
+        left: -50px;
+        right: -50px;
         height: 10px;
         transform: rotate(-45deg);
     }
