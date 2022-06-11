@@ -7,10 +7,8 @@ function fillField(id){
         evaluationArea[id] = playerId;
         draw(id);
         changePlayer();
-    }else{
-        console.log('Fehler');
     }
-    console.log(evaluationArea);
+    
     checkForWin();
 }
 
@@ -27,8 +25,12 @@ function draw(fieldId){
 function changePlayer(){
     if (playerId == 1){
         playerId = 2;
+        document.getElementById('player1').classList.remove('activePlayer');
+        document.getElementById('player2').classList.add('activePlayer');
     }else{
         playerId = 1;
+        document.getElementById('player1').classList.add('activePlayer');
+        document.getElementById('player2').classList.remove('activePlayer');
     }
 }
 
@@ -81,4 +83,15 @@ function checkForWinDiaganal(){
         document.getElementById('crossOut').classList.add('animDiagonal2');
         gameIsRunning = false;
     }
+}
+
+
+function restart(){
+    evaluationArea = [];
+    for (let i= 0; i < 9; i++) {
+        document.getElementById('xField_'+i).classList.add('d-none');
+        document.getElementById('oField_'+i).classList.add('d-none');
+    }
+    document.getElementById('crossOutArea').innerHTML = '<div id="crossOut"></div>';
+    gameIsRunning = true;
 }

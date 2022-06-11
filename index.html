@@ -18,8 +18,9 @@
 
 <body>
     <div class="content">
-        <div class="player1 activePlayer"><img src="./img/x.png" alt="X"> Player 1</div>
-        <div class="player2">Player 2 <img src="./img/o.png" alt=""></div>
+        <div id="player1" class="activePlayer"><img src="./img/x.png" alt="X"> Player 1</div>
+        <div id="player2">Player 2 <img src="./img/o.png" alt=""></div>
+        <div id="restartButton" onclick="restart()">Restart</div>
         <div class="gameField">
             <table>
                 <tr>
@@ -65,7 +66,11 @@
                     </td>
                 </tr>
             </table>
-            <div id="crossOut"></div>
+
+            <div id="crossOutArea">
+                <div id="crossOut"></div>
+            </div>
+            
         </div>
     </div>
 </body>
