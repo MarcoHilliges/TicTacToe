@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <script src="script.js"></script>
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
     <div class="content">
-        <table>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="player">Player 1</div>
+        <div class="player">Player 2</div>
+        <div class="gameField">
+            <table>
+                <tr>
+                    <td onclick="fillField(0)" id="field_0">
+                        <img id="xField_0" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_0" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(1)" id="field_1">
+                        <img id="xField_1" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_1" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(2)" id="field_2">
+                        <img id="xField_2" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_2" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="fillField(3)" id="field_3">
+                        <img id="xField_3" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_3" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(4)" id="field_4">
+                        <img id="xField_4" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_4" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(5)" id="field_5">
+                        <img id="xField_5" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_5" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="fillField(6)" id="field_6">
+                        <img id="xField_6" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_6" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(7)" id="field_7">
+                        <img id="xField_7" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_7" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                    <td onclick="fillField(8)" id="field_8">
+                        <img id="xField_8" class="d-none" src="./img/x.png" title="X" alt="X">
+                        <img id="oField_8" class="d-none" src="./img/o.png" title="O" alt="O">
+                    </td>
+                </tr>
+            </table>
+            <div id="crossOut"></div>
+        </div>
     </div>
 </body>
+
 </html>

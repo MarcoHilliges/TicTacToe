@@ -1,0 +1,172 @@
+@keyframes myAnim {
+	0% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animHorizontal0{
+    animation: horizontal0 1s ease 0s 1 normal forwards;
+}
+
+@keyframes horizontal0{
+    0% {
+        top: 16%;
+        left: 10px;
+        right: 386px;
+        height: 10px;
+    }
+
+    100% {
+        top: 16%;
+        left: 10px;
+        right: 10px;
+        height: 10px;
+    }
+}
+
+.animHorizontal3{
+    animation: horizontal3 1s ease 0s 1 normal forwards;
+}
+
+@keyframes horizontal3{
+    0% {
+        top: 48%;
+        left: 10px;
+        right: 386px;
+        height: 10px;
+    }
+
+    100% {
+        top: 48%;
+        left: 10px;
+        right: 10px;
+        height: 10px;
+    }
+}
+
+.animHorizontal6{
+    animation: horizontal6 1s ease 0s 1 normal forwards;
+}
+
+@keyframes horizontal6{
+    0% {
+        top: 83%;
+        left: 10px;
+        right: 386px;
+        height: 10px;
+    }
+
+    100% {
+        top: 83%;
+        left: 10px;
+        right: 10px;
+        height: 10px;
+    }
+}
+
+.animVertical0{
+    animation: vertical0 1s ease 0s 1 normal forwards;
+}
+
+@keyframes vertical0{
+    0% {
+        top: 10px;
+        left: 16%;
+        bottom: 383px;
+        width: 10px;
+    }
+
+    100% {
+        top: 10px;
+        left: 16%;
+        bottom: 10px;
+        width: 10px;
+    }
+}
+
+.animVertical1{
+    animation: vertical1 1s ease 0s 1 normal forwards;
+}
+
+@keyframes vertical1{
+    0% {
+        top: 10px;
+        left: 49%;
+        bottom: 383px;
+        width: 10px;
+    }
+
+    100% {
+        top: 10px;
+        left: 49%;
+        bottom: 10px;
+        width: 10px;
+    }
+}
+
+.animVertical2{
+    animation: vertical2 1s ease 0s 1 normal forwards;
+}
+
+@keyframes vertical2{
+    0% {
+        top: 10px;
+        left: 83%;
+        bottom: 383px;
+        width: 10px;
+    }
+
+    100% {
+        top: 10px;
+        left: 83%;
+        bottom: 10px;
+        width: 10px;
+    }
+}
+
+.animDiagonal0{
+    animation: diagonal0 1s ease 0s 1 normal forwards;
+}
+
+@keyframes diagonal0{
+    0% {
+        top: 30px;
+        left: 65px;
+        right: 382px;
+        height: 10px;
+        transform: rotate(45deg);
+    }
+
+    100% {
+        top: 48%;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        transform: rotate(45deg);
+    }
+}
+
+.animDiagonal2{
+    animation: diagonal2 1s ease 0s 1 normal forwards;
+}
+
+@keyframes diagonal2{
+    0% {
+        top: 30px;
+        left: 382px;
+        right: 65px;
+        height: 10px;
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        top: 48%;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        transform: rotate(-45deg);
+    }
+}
