@@ -22,16 +22,14 @@ function draw(fieldId){
 
 
 function changePlayer(){
-    if (playerId == 1 && gameIsRunning){
+    if (playerId == 1){
         playerId = 2;
         document.getElementById('player1').classList.remove('activePlayer');
         document.getElementById('player2').classList.add('activePlayer');
     }else{
-        if (gameIsRunning) {
-            playerId = 1;
-            document.getElementById('player1').classList.add('activePlayer');
-            document.getElementById('player2').classList.remove('activePlayer');
-        }
+        playerId = 1;
+        document.getElementById('player1').classList.add('activePlayer');
+        document.getElementById('player2').classList.remove('activePlayer');
     }
 }
 
