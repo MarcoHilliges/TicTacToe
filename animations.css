@@ -7,6 +7,16 @@
 	}
 }
 
+@keyframes animWinScreen {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 .animHorizontal0{
     animation: horizontal0 1s ease 0s 1 normal forwards;
 }

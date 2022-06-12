@@ -1,0 +1,166 @@
+@media(orientation: landscape) and (max-height: 550px){
+    html{
+        font-size: 20px;
+    }
+    
+    .content{
+        transform: scale(0.95);
+    }
+}
+
+
+@media(orientation: landscape) and (max-height: 520px){
+    .content{
+        transform: scale(0.90);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 465px){
+    .content{
+        transform: scale(0.85);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 465px){
+    .content{
+        transform: scale(0.80);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 435px){
+    .content{
+        transform: scale(0.75);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 410px){
+    .content{
+        transform: scale(0.70);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 380px){
+    .content{
+        transform: scale(0.65);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 360px){
+    .content{
+        transform: scale(0.60);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 325px){
+    .content{
+        transform: scale(0.55);
+    }
+}
+
+@media(orientation: landscape) and (max-height: 300px){
+    .content{
+        transform: scale(0.50);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 800px){
+    html{
+        font-size: 20px;
+    }
+    
+    .content{
+        transform: rotate(90deg);
+    }
+
+    #player1, #player2, #restartButton{
+        transform: rotate(-90deg);
+    }
+
+    @keyframes animWinScreen {
+        0% {
+            transform: scale(0);
+        }
+    
+        100% {
+            transform: scale(1) rotate(-90deg);
+        }
+    }
+
+    #player1{
+        left: unset;
+        right: 17%;
+        bottom: 23%;
+    }
+
+    #player2{
+        bottom: 70%;
+    }
+
+    #restartButton{
+        top: 47%;
+    }
+}
+
+@media(orientation: portrait) and (max-width: 550px){
+    .content{
+        transform: rotate(90deg) scale(0.95);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 520px){
+    .content{
+        transform: rotate(90deg) scale(0.90);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 490px){
+    .content{
+        transform: rotate(90deg) scale(0.85);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 460px){
+    .content{
+        transform: rotate(90deg) scale(0.80);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 440px){
+    .content{
+        transform: rotate(90deg) scale(0.75);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 420px){
+    .content{
+        transform: rotate(90deg) scale(0.70);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 390px){
+    .content{
+        transform: rotate(90deg) scale(0.65);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 360px){
+    .content{
+        transform: rotate(90deg) scale(0.60);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 330px){
+    .content{
+        transform: rotate(90deg) scale(0.55);
+    }
+}
+
+@media(orientation: portrait) and (max-width: 300px){
+    .content{
+        transform: rotate(90deg) scale(0.50);
+    }
+}
+
+
+
+

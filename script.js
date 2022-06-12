@@ -6,10 +6,9 @@ function fillField(id){
     if(!evaluationArea[id] && gameIsRunning){
         evaluationArea[id] = playerId;
         draw(id);
+        checkForWin();
         changePlayer();
     }
-    
-    checkForWin();
 }
 
 
@@ -45,15 +44,16 @@ function checkForWin(){
 function checkForWinHorizontal(){
     if (evaluationArea[0] == evaluationArea[1] && evaluationArea[1] == evaluationArea[2] && evaluationArea[0]){
         document.getElementById('crossOut').classList.add('animHorizontal0');
-        gameIsRunning = false;
+        gameEnd();
+        
     }
     if (evaluationArea[3] == evaluationArea[4] && evaluationArea[4] == evaluationArea[5] && evaluationArea[3]){
         document.getElementById('crossOut').classList.add('animHorizontal3');
-        gameIsRunning = false;
+        gameEnd();
     }
     if (evaluationArea[6] == evaluationArea[7] && evaluationArea[7] == evaluationArea[8] && evaluationArea[6]){
         document.getElementById('crossOut').classList.add('animHorizontal6');
-        gameIsRunning = false;
+        gameEnd();
     }
 }
 
@@ -61,15 +61,15 @@ function checkForWinHorizontal(){
 function checkForWinVartical(){
     if (evaluationArea[0] == evaluationArea[3] && evaluationArea[3] == evaluationArea[6] && evaluationArea[0]){
         document.getElementById('crossOut').classList.add('animVertical0');
-        gameIsRunning = false;
+        gameEnd();
     }
     if (evaluationArea[1] == evaluationArea[4] && evaluationArea[4] == evaluationArea[7] && evaluationArea[1]){
         document.getElementById('crossOut').classList.add('animVertical1');
-        gameIsRunning = false;
+        gameEnd();
     }
     if (evaluationArea[2] == evaluationArea[5] && evaluationArea[5] == evaluationArea[8] && evaluationArea[2]){
         document.getElementById('crossOut').classList.add('animVertical2');
-        gameIsRunning = false;
+        gameEnd();
     }
 }
 
@@ -77,12 +77,19 @@ function checkForWinVartical(){
 function checkForWinDiaganal(){
     if (evaluationArea[0] == evaluationArea[4] && evaluationArea[4] == evaluationArea[8] && evaluationArea[0]){
         document.getElementById('crossOut').classList.add('animDiagonal0');
-        gameIsRunning = false;
+        gameEnd();
     }
     if (evaluationArea[2] == evaluationArea[4] && evaluationArea[4] == evaluationArea[6] && evaluationArea[2]){
         document.getElementById('crossOut').classList.add('animDiagonal2');
-        gameIsRunning = false;
+        gameEnd();
     }
+}
+
+
+function gameEnd(){
+    document.getElementById('MatchendScreen').innerHTML = 'Player ' + playerId + ' wins!'
+    document.getElementById('MatchendScreen').classList.remove('d-none');
+    gameIsRunning = false;
 }
 
 
@@ -93,5 +100,7 @@ function restart(){
         document.getElementById('oField_'+i).classList.add('d-none');
     }
     document.getElementById('crossOutArea').innerHTML = '<div id="crossOut"></div>';
+    document.getElementById('MatchendScreen').classList.add('d-none');
     gameIsRunning = true;
 }
+
